@@ -1,0 +1,52 @@
+// ---------------------------------------------------------
+// @TOC
+// ---------------------------------------------------------
+
+// + @Variables
+// + @Centering
+
+// ---------------------------------------------------------
+// @Variables
+// ---------------------------------------------------------
+
+$responsive: true !default;
+
+// ---------------------------------------------------------
+// @Centering
+// ---------------------------------------------------------
+
+.centerY {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.centerX {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.centerXY {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@if ($responsive == true) {
+  @include generate-responsive() {
+    .centerY\@#{$breakpoint-alias} {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .centerX\@#{$breakpoint-alias} {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .centerXY\@#{$breakpoint-alias} {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.cornerSquare {
+  height: 8em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    transition: all 0.3s ease-in-out;
+  }
+}

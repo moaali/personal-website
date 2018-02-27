@@ -1,0 +1,25 @@
+#topbarTitle {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-family: 'Merriweather', serif;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  &.isString::before,
+  &.isString::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #000;
+    margin: 0 20px;
+  }
+}
+
+.toggle-btn {
+  transition: all 0.3s ease-in-out;
+}

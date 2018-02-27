@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Roboto:400,500,700" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <style>
+    #loader {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      background: #fff;
+      z-index: 10000;
+      transition: all 0.5s ease;
+      transition-delay: 0.3s;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+
+    #loader.fade {
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    #loader span {
+      transition: all 0.2s ease;
+      transition-delay: 0;
+    }
+
+    #loader.fade span {
+      opacity: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id='loader'>
+    <span>Mo is getting ready...</span>
+  </div>
+  <div id="root"></div>
+</body>
+</html>

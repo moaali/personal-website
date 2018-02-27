@@ -1,0 +1,13 @@
+// ---------------------------------------------------------
+// @Colors
+// ---------------------------------------------------------
+
+@each $color-set in $color-sets {
+  @each $name, $color in $color-set {
+    .c-#{$name},     .cH-#{$name}:hover      { color: $color !important; }
+    .bgc-#{$name},   .bgcH-#{$name}:hover    { background-color: $color !important; }
+    .bdc-#{$name},   .bdcH-#{$name}:hover    { border-color: $color !important; }
+    .fill-#{$name},  .fillH-#{$name}:hover   { fill: $color !important; }
+    .str-#{$name},   .strH-#{$name}:hover    { stroke: $color !important; }
+  }
+}
