@@ -12,6 +12,29 @@ const Work = () => (
         <div className='layers w-100p bdB pB-40'>
           <div className='peers ai-fe jc-sb w-100p'>
             <hgroup>
+              <h5 className='fw-600 c-pivotal'>Adminator</h5>
+              <a target='_blank' rel='noopener noreferrer' href="http://adminator.moali.me/" className='d-b td-n'>
+                <h3 className='fw-600 c-blocker cH-primary tran-all'>HTML5/CSS3 Admin Dashboard</h3>
+              </a>
+            </hgroup>
+            <span className='fw-600 fsz-xl c-major'>$</span>
+          </div>
+        </div>
+        <div className='layers w-100p bdB pY-40'>
+          <div className='peers ai-fe jc-sb w-100p'>
+            <hgroup>
+              <h5 className='fw-600 c-pivotal'>Alke</h5>
+              <a target='_blank' rel='noopener noreferrer' href="http://alke.moali.me/" className='d-b td-n'>
+                <h3 className='fw-600 c-blocker cH-primary tran-all'>React Web App</h3>
+              </a>
+            </hgroup>
+            <span className='fw-600 fsz-xl c-major'>$</span>
+          </div>
+          <p className='mB-0 w-100p mT-10'>React/MobX powered single page admin dashboard.</p>
+        </div>
+        <div className='layers w-100p bdB pY-40'>
+          <div className='peers ai-fe jc-sb w-100p'>
+            <hgroup>
               <h5 className='fw-600 c-pivotal'>Ponut</h5>
               <a target='_blank' rel='noopener noreferrer' href="https://themeforest.net/item/ponut-angular-admin-dashboard/20056240" className='d-b td-n'>
                 <h3 className='fw-600 c-blocker cH-primary tran-all'>AngularJS Web App</h3>
